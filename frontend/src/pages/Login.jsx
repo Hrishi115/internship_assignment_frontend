@@ -13,6 +13,8 @@ function Login() {
     setError('')
     setLoading(true)
 
+    console.log(import.meta.env)
+    
     try {
       await login(formData.username, formData.password)
       navigate('/dashboard')
